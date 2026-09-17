@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>机习工坊 · 机器学习教学讲义</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#course">跳到课程内容</a>
+
+  <section class="landing" id="home">
+    <nav class="landing-nav">
+      <div class="brand">机习<span>工坊</span></div>
+      <a href="#course" id="nav-start">进入讲义</a>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-copy">
+        <h1>机器学习<br />十一课讲义</h1>
+        <p>从 Python 与数据准备，到回归、聚类、森林、贝叶斯、神经网络与文本挖掘——按课堂顺序阅读，可直接用于备课与自学。</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#course" id="cta-start">开始第 1 课</a>
+          <a class="btn btn-ghost" href="#course" id="cta-path">查看课序</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 560 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="24" y="28" width="512" height="364" rx="28" fill="#103834" stroke="rgba(198,226,110,0.35)" stroke-width="2"/>
+          <path d="M72 320 C140 290, 180 210, 250 200 C320 190, 360 250, 420 160 C460 110, 480 100, 500 90" stroke="#c6e26e" stroke-width="3.5" stroke-linecap="round" fill="none">
+            <animate attributeName="stroke-dasharray" from="0 900" to="900 0" dur="2.4s" fill="freeze"/>
+          </path>
+          <g fill="#c6e26e">
+            <circle cx="120" cy="286" r="6"><animate attributeName="opacity" values="0;1;1" dur="1.2s" fill="freeze"/></circle>
+            <circle cx="190" cy="236" r="6"><animate attributeName="opacity" values="0;1;1" dur="1.4s" fill="freeze"/></circle>
+            <circle cx="260" cy="198" r="7"><animate attributeName="opacity" values="0;1;1" dur="1.6s" fill="freeze"/></circle>
+            <circle cx="340" cy="232" r="6"><animate attributeName="opacity" values="0;1;1" dur="1.8s" fill="freeze"/></circle>
+            <circle cx="410" cy="168" r="7"><animate attributeName="opacity" values="0;1;1" dur="2s" fill="freeze"/></circle>
+            <circle cx="470" cy="112" r="6"><animate attributeName="opacity" values="0;1;1" dur="2.2s" fill="freeze"/></circle>
+          </g>
+          <g stroke="rgba(243,250,247,0.18)" stroke-width="1">
+            <line x1="72" y1="100" x2="500" y2="100"/>
+            <line x1="72" y1="170" x2="500" y2="170"/>
+            <line x1="72" y1="240" x2="500" y2="240"/>
+            <line x1="72" y1="310" x2="500" y2="310"/>
+          </g>
+          <text x="72" y="68" fill="#e8f6ef" font-family="Fraunces, Noto Serif SC, serif" font-size="22">fit → predict</text>
+          <text x="72" y="372" fill="rgba(232,246,239,0.7)" font-family="Noto Sans SC, sans-serif" font-size="14">先看数，再建模 · 先测试集，再谈调参</text>
+        </svg>
+      </div>
+    </div>
+    <div class="landing-wave"></div>
+  </section>
+
+  <div class="course-shell" id="course">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <div class="sidebar-brand">机习<span>工坊</span></div>
+        <button class="back-home" id="back-home" type="button">← 返回首页</button>
+      </div>
+      <nav class="lesson-nav" id="lesson-nav" aria-label="课程目录"></nav>
+    </aside>
+
+    <main class="main">
+      <header class="lesson-header" id="lesson-header"></header>
+      <article class="lesson-body" id="lesson-body"></article>
+      <div class="pager">
+        <button type="button" id="prev-lesson">上一课</button>
+        <button type="button" id="next-lesson">下一课</button>
+      </div>
+      <section class="appendix" id="appendix" hidden></section>
+    </main>
+  </div>
+
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="打开目录">目录</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script src="content.js"></script>
+  <script src="demos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
