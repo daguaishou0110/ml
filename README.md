@@ -18,6 +18,9 @@
 
 建议联网加载 KaTeX；修改讲义后如需同步网页，需重新生成 `content.js`。
 
+线上（Render）：https://ml-ac8t.onrender.com  
+若整仓静态部署，根目录 `index.html` 会跳到 `教学网页/`。更干净的做法是把 Publish Directory 设为 `教学网页`，这样首页就是讲义本身。
+
 ## 仓库
 
 https://github.com/daguaishou0110/ml
