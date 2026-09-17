@@ -91,11 +91,11 @@
             },
             {
               "type": "li",
-              "text": "**下标从 0 开始**：`scores[1]` 是第二个，不是第一个。这是最高频笔误。"
+              "text": "下标从 0 开始：`scores[1]` 是第二个，不是第一个。这是最高频笔误。"
             },
             {
               "type": "li",
-              "text": "**切片** `scores[1:4]` 取下标 1、2、3，含左不含右。"
+              "text": "切片 `scores[1:4]` 取下标 1、2、3，含左不含右。"
             },
             {
               "type": "li",
@@ -223,7 +223,7 @@
             },
             {
               "type": "p",
-              "text": "课堂对照：用列表循环算平方和，再用 `np.sum(a**2)`，感受写法差异。"
+              "text": "课堂对照：用列表循环算平方和，再用 `np.sum(a2)`，感受写法差异。"
             }
           ]
         },
@@ -430,19 +430,19 @@
           "blocks": [
             {
               "type": "li",
-              "text": "**字符串数字**：CSV 读进来可能是 `\"85\"` 而不是 `85`，`mean` 会异常或报错。用 `pd.to_numeric(errors=\"coerce\")`。"
+              "text": "字符串数字：CSV 读进来可能是 `\"85\"` 而不是 `85`，`mean` 会异常或报错。用 `pd.to_numeric(errors=\"coerce\")`。"
             },
             {
               "type": "li",
-              "text": "**类别当数值**：把 city_id 直接当连续值回归，模型会以为 12 区比 3 区「大」。"
+              "text": "类别当数值：把 city_id 直接当连续值回归，模型会以为 12 区比 3 区「大」。"
             },
             {
               "type": "li",
-              "text": "**布尔与 0/1**：筛选条件要写清楚 `df[\"pass\"]==True` 或 `df[\"pass\"]==1`，别混。"
+              "text": "布尔与 0/1：筛选条件要写清楚 `df[\"pass\"]==True` 或 `df[\"pass\"]==1`，别混。"
             },
             {
               "type": "li",
-              "text": "**时间字符串**：未解析成 datetime 前，不能做「最近 7 天」这类过滤。"
+              "text": "时间字符串：未解析成 datetime 前，不能做「最近 7 天」这类过滤。"
             }
           ]
         },
@@ -496,15 +496,15 @@
             },
             {
               "type": "li",
-              "text": "**Python 解释器**：真正执行代码的程序。没有它，代码只是文本。"
+              "text": "Python 解释器：真正执行代码的程序。没有它，代码只是文本。"
             },
             {
               "type": "li",
-              "text": "**包管理器（pip 或 conda）**：用来安装 numpy、pandas、sklearn 等第三方库。"
+              "text": "包管理器（pip 或 conda）：用来安装 numpy、pandas、sklearn 等第三方库。"
             },
             {
               "type": "li",
-              "text": "**交互界面（Jupyter / VS Code / Cursor 等）**：让你一格一格运行、立刻看输出。"
+              "text": "交互界面（Jupyter / VS Code / Cursor 等）：让你一格一格运行、立刻看输出。"
             },
             {
               "type": "p",
@@ -686,7 +686,7 @@
           "blocks": [
             {
               "type": "li",
-              "text": "**ModuleNotFoundError**"
+              "text": "ModuleNotFoundError"
             },
             {
               "type": "p",
@@ -694,7 +694,7 @@
             },
             {
               "type": "li",
-              "text": "**FileNotFoundError**"
+              "text": "FileNotFoundError"
             },
             {
               "type": "p",
@@ -702,7 +702,7 @@
             },
             {
               "type": "li",
-              "text": "**Kernel 选错**"
+              "text": "Kernel 选错"
             },
             {
               "type": "p",
@@ -710,7 +710,7 @@
             },
             {
               "type": "li",
-              "text": "**Expected 2D array**"
+              "text": "Expected 2D array"
             },
             {
               "type": "p",
@@ -718,7 +718,7 @@
             },
             {
               "type": "li",
-              "text": "**中文方框**"
+              "text": "中文方框"
             },
             {
               "type": "p",
@@ -1238,15 +1238,15 @@
             },
             {
               "type": "li",
-              "text": "**删列**：缺失比例极高，且难补、信息少"
+              "text": "删列：缺失比例极高，且难补、信息少"
             },
             {
               "type": "li",
-              "text": "**删行**：标签缺失；或整体样本很多、缺失行很少"
+              "text": "删行：标签缺失；或整体样本很多、缺失行很少"
             },
             {
               "type": "li",
-              "text": "**填充**：数值列用中位数/均值；类别列用众数；有业务规则按规则"
+              "text": "填充：数值列用中位数/均值；类别列用众数；有业务规则按规则"
             },
             {
               "type": "p",
@@ -1357,7 +1357,7 @@
             },
             {
               "type": "li",
-              "text": "**Label Encoding**：红=0，蓝=1，绿=2……"
+              "text": "Label Encoding：红=0，蓝=1，绿=2……"
             },
             {
               "type": "p",
@@ -1365,7 +1365,7 @@
             },
             {
               "type": "li",
-              "text": "**One-Hot Encoding**：每个类别一列 0/1。"
+              "text": "One-Hot Encoding：每个类别一列 0/1。"
             },
             {
               "type": "p",
@@ -1683,15 +1683,15 @@
             },
             {
               "type": "li",
-              "text": "**正负不再抵消**：\\((-3)^2\\) 与 \\(3^2\\) 一样大。"
+              "text": "正负不再抵消：\\((-3)^2\\) 与 \\(3^2\\) 一样大。"
             },
             {
               "type": "li",
-              "text": "**大误差惩罚更重**：错 10 比错 2 严重得多（100 vs 4），迫使直线不能对离谱点完全无视——这也是它怕极端值的原因。"
+              "text": "大误差惩罚更重：错 10 比错 2 严重得多（100 vs 4），迫使直线不能对离谱点完全无视——这也是它怕极端值的原因。"
             },
             {
               "type": "li",
-              "text": "**数学上好优化**：平方函数光滑，便于求导找最小值。"
+              "text": "数学上好优化：平方函数光滑，便于求导找最小值。"
             },
             {
               "type": "p",
@@ -1760,7 +1760,7 @@
           "blocks": [
             {
               "type": "code",
-              "text": "from sklearn.linear_model import LinearRegression\nfrom sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score\n\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\n\nprint(\"MAE\", mean_absolute_error(y_test, y_pred))\nprint(\"RMSE\", mean_squared_error(y_test, y_pred) ** 0.5)\nprint(\"R2\", r2_score(y_test, y_pred))\nprint(\"coef_\", model.coef_)\nprint(\"intercept_\", model.intercept_)"
+              "text": "from sklearn.linear_model import LinearRegression\nfrom sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score\n\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\n\nprint(\"MAE\", mean_absolute_error(y_test, y_pred))\nprint(\"RMSE\", mean_squared_error(y_test, y_pred)  0.5)\nprint(\"R2\", r2_score(y_test, y_pred))\nprint(\"coef_\", model.coef_)\nprint(\"intercept_\", model.intercept_)"
             },
             {
               "type": "p",
@@ -2522,11 +2522,11 @@
           "blocks": [
             {
               "type": "li",
-              "text": "**肘部法**：看误差随 K 增加而下降的曲线，找「肘点」。"
+              "text": "肘部法：看误差随 K 增加而下降的曲线，找「肘点」。"
             },
             {
               "type": "li",
-              "text": "**轮廓系数**：越接近 1，通常表示簇内更紧、簇间更分离。"
+              "text": "轮廓系数：越接近 1，通常表示簇内更紧、簇间更分离。"
             },
             {
               "type": "p",
@@ -2802,11 +2802,11 @@
             },
             {
               "type": "li",
-              "text": "**Bootstrap 抽样**：每棵树看到有放回抽来的略不同样本"
+              "text": "Bootstrap 抽样：每棵树看到有放回抽来的略不同样本"
             },
             {
               "type": "li",
-              "text": "**特征随机子集**：分裂时只在部分特征中选最优分裂，降低树与树的相似性"
+              "text": "特征随机子集：分裂时只在部分特征中选最优分裂，降低树与树的相似性"
             },
             {
               "type": "p",
@@ -3444,15 +3444,15 @@
             },
             {
               "type": "li",
-              "text": "**ReLU**：负数变 0，正数保持。隐藏层最常用，计算简单。"
+              "text": "ReLU：负数变 0，正数保持。隐藏层最常用，计算简单。"
             },
             {
               "type": "li",
-              "text": "**Sigmoid**：压到 (0,1)，可用于二分类输出。"
+              "text": "Sigmoid：压到 (0,1)，可用于二分类输出。"
             },
             {
               "type": "li",
-              "text": "**Softmax**：多分类输出，各类概率和为 1。"
+              "text": "Softmax：多分类输出，各类概率和为 1。"
             },
             {
               "type": "p",
@@ -3619,7 +3619,7 @@
             },
             {
               "type": "p",
-              "text": "先算线性部分 z=0.8*1.0 + (-0.4)*(-0.5)+0.1=1.1，再 ReLU 得 1.1。"
+              "text": "先算线性部分 z=0.81.0 + (-0.4)(-0.5)+0.1=1.1，再 ReLU 得 1.1。"
             },
             {
               "type": "p",

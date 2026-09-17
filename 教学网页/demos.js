@@ -188,15 +188,15 @@ C:\\Users\\you\\miniconda3\\python.exe
         let num = 0, den = 0;
         pts.forEach((p) => {
           num += (p.x - mx) * (p.y - my);
-          den += (p.x - mx) ** 2;
+          den += (p.x - mx)  2;
         });
         const w = num / den;
         const b = my - w * mx;
         let sse = 0, sst = 0;
         pts.forEach((p) => {
           const pred = w * p.x + b;
-          sse += (p.y - pred) ** 2;
-          sst += (p.y - my) ** 2;
+          sse += (p.y - pred)  2;
+          sst += (p.y - my)  2;
         });
         const r2 = 1 - sse / sst;
         const mae = pts.reduce((s, p) => s + Math.abs(p.y - (w * p.x + b)), 0) / n;
@@ -347,7 +347,7 @@ R²   = ${r2.toFixed(4)}
         labels = pts.map((p) => {
           let best = 0, bd = Infinity;
           centers.forEach((c, i) => {
-            const d = (p.x - c.x) ** 2 + (p.y - c.y) ** 2;
+            const d = (p.x - c.x)  2 + (p.y - c.y)  2;
             if (d < bd) { bd = d; best = i; }
           });
           return best;
